@@ -1,502 +1,514 @@
-
 <!DOCTYPE HTML>
 <html lang="eng">
 {% load static %}
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Munalula Sikazwe Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Munalula Sikazwe Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:image" content=""/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:card" content=""/>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-	<!-- Modernizr JS -->
-	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
+    <!-- Modernizr JS -->
+    <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
 	<script src="{% static 'js/respond.min.js' %}"></script>
 	<![endif]-->
 
-	</head>
-	<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url({% static 'images/about.jpg' %}"></div>
-				<h1 id="colorlib-logo"><a href="{% url 'home' %}">Munalula Sikazwe</a></h1>
-				<span class="position"><a href="#"> CyberSecurity Specialist /Pentester and  Computer Scientist</a> in  Zambia</span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="services">Services</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
+</head>
+<body>
+<div id="colorlib-page">
+    <div class="container-wrap">
+        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
+           aria-expanded="false" aria-controls="navbar"><i></i></a>
+        <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+            <div class="text-center">
+                <div class="author-img" style="background-image: url({% static 'images/My Photo.jpg' %}"></div>
+                <h1 id="colorlib-logo"><a href="{% url 'home' %}">Munalula Sikazwe</a></h1>
+                <span class="position"><a href="#"> Computer Scientist and Professional Python Developer</a> in  Zambia</span>
+            </div>
+            <nav id="colorlib-main-menu" role="navigation" class="navbar">
+                <div id="navbar" class="collapse">
+                    <ul>
+                        <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+                        <li><a href="#" data-nav-section="about">About</a></li>
+                        <li><a href="#" data-nav-section="services">Services</a></li>
+                        <li><a href="#" data-nav-section="skills">Skills</a></li>
+                        <li><a href="#" data-nav-section="education">Education</a></li>
+                        <li><a href="#" data-nav-section="experience">Experience</a></li>
 
-					</ul>
-				</div>
-			</nav>
-
-
-
-		</aside>
-
-		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div  class="flexslider js-fullheight">
-					<ul class="slides">
-				   	<li style="background-image: url({% static 'images/img_bg_1.jpg' %});">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner js-fullheight">
-					   					<div class="desc">
-						   					<h1>Hi! <br>I'm Munalula </h1>
-
-												<p><a class="btn btn-primary btn-learn" href="{% static 'Munalula_Sikazwe_Resume.pdf' %}">Download CV <i class="icon-download4"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				   	<li  style="background-image: url({% static 'images/img_bg_2.jpg' %});">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid" >
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner">
-					   					<div class="desc">
-						   					<h1>I am <br>a  Computer Scientist</h1>
-												<p><a class="btn btn-primary btn-learn" href="{% static 'certifications and transcripts.pdf' %}">View Transcripts and Certifications <i class="icon-briefcase3"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				  	</ul>
-			  	</div>
-			</section>
-
-			<section class="colorlib-about" data-section="about">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="about-desc">
-										<span class="heading-meta">About Me</span>
-										<h2 class="colorlib-heading">Who Am I?</h2>
-										<p><strong>Hi I'm Munalula Sikazwe,</strong> a Computer Scientist and CyberSecurity Specialist with a passion for problem solving with scientific and mathematical interests</p>
-										<p> I am a passionate Penetration tester and have strong confidence with my skills in the python programming language</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-									<div class="services color-1">
-										<span class="icon2"><i class="icon-bulb"></i></span>
-										<h3>Penetration Testing with <strong>KALI AND PARROT SECURITY</strong></h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div class="services color-2">
-										<span class="icon2"><i class="icon-globe-outline"></i></span>
-										<h3>Web Design with <strong>DJANGO AND FLASK </strong></h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-									<div class="services color-3">
-										<span class="icon2"><i class="icon-data"></i></span>
-										<h3>Database Manage Systems <strong>MONGODB MYSQL </strong></h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4">
-										<span class="icon2"><i class="icon-phone3"></i></span>
-										<h3>Mobile Penetration Testing</h3>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<h2>I am happy to know you </h2>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                    </ul>
+                </div>
+            </nav>
 
 
+        </aside>
 
-			<section class="colorlib-services" data-section="services">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">What I do?</span>
-							<h2 class="colorlib-heading">Here are some of my expertise</h2>
-						</div>
-					</div>
-					<div class="row row-pt-md">
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-1">
-								<span class="icon">
-									<i class="icon-bulb"></i>
-								</span>
-								<div class="desc">
-									<h3>Penetration Testing</h3>
-                                    <p>Network and Web pentesting</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-2">
+        <div id="colorlib-main">
+            <section id="colorlib-hero" class="js-fullheight" data-section="home">
+                <div class="flexslider js-fullheight">
+                    <ul class="slides">
+                        <li style="background-image: url({% static 'images/brock-wegner-7yONARoUsbY-unsplash.jpg' %});">
+                            <div class="overlay"></div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+                                        <div class="slider-text-inner js-fullheight">
+                                            <div class="desc">
+                                                <h1>Hi! <br>I'm Munalula </h1>
+
+                                                <p><a class="btn btn-primary btn-learn"
+                                                      href="{% static 'Munalula_Sikazwe_Resume.pdf' %}">Download CV <i
+                                                        class="icon-download4"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="background-image: url({% static 'images/jason-grove-B4kmaRADNAc-unsplash.jpg' %});">
+                            <div class="overlay"></div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+                                        <div class="slider-text-inner">
+                                            <div class="desc">
+                                                <h1>I am <br>a Computer Scientist</h1>
+                                                <p><a class="btn btn-primary btn-learn"
+                                                      href="{% static 'certifications and transcripts.pdf' %}">View
+                                                    Transcripts and Certifications <i class="icon-briefcase3"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="colorlib-about" data-section="about">
+                <div class="colorlib-narrow-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                <div class="col-md-12">
+                                    <div class="about-desc">
+                                        <span class="heading-meta">About Me</span>
+                                        <h2 class="colorlib-heading">Who Am I?</h2>
+                                        <p><strong>Hi I'm Munalula Sikazwe,</strong> a Computer Scientist and
+                                            CyberSecurity Specialist with a passion for problem solving with scientific
+                                            and mathematical interests</p>
+                                        <p> I am a passionate Penetration tester and have strong confidence with my
+                                            skills in the python programming language</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="services color-1">
+                                        <span class="icon2"><i class="icon-bulb"></i></span>
+                                        <h3>Penetration Testing with <strong>KALI AND PARROT SECURITY</strong></h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                                    <div class="services color-2">
+                                        <span class="icon2"><i class="icon-globe-outline"></i></span>
+                                        <h3>Web Design with <strong>DJANGO AND FLASK </strong></h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+                                    <div class="services color-3">
+                                        <span class="icon2"><i class="icon-data"></i></span>
+                                        <h3>Database Manage Systems <strong>MONGODB MYSQL </strong></h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+                                    <div class="services color-4">
+                                        <span class="icon2"><i class="icon-phone3"></i></span>
+                                        <h3>Mobile Penetration Testing</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="hire">
+                                        <h2>I am happy to know you </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="colorlib-services" data-section="services">
+                <div class="colorlib-narrow-content">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                             data-animate-effect="fadeInLeft">
+                            <span class="heading-meta">What I do?</span>
+                            <h2 class="colorlib-heading">Here are some of my expertise</h2>
+                        </div>
+                    </div>
+                    <div class="row row-pt-md">
+
+                        <div class="col-md-4 text-center animate-box">
+                            <div class="services color-2">
 								<span class="icon">
 									<i class="icon-data"></i>
 								</span>
-								<div class="desc">
-									<h3>Web Development</h3>
-									<p>  Django and Flask Frameworks</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-3">
+                                <div class="desc">
+                                    <h3>Web Development</h3>
+                                    <p> Django Framework</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center animate-box">
+                            <div class="services color-3">
 								<span class="icon">
 									<i class="icon-phone3"></i>
 								</span>
-								<div class="desc">
-									<h3>Automation</h3>
-									<p>Automation of webapps with selenium</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-4">
+                                <div class="desc">
+                                    <h3>Automation</h3>
+                                    <p>Automation of webapps with selenium</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center animate-box">
+                            <div class="services color-4">
 								<span class="icon">
 									<i class="icon-layers2"></i>
 								</span>
-								<div class="desc">
-									<h3>Algorithm Design and Analysis</h3>
-									<p>Analyse and Design optimum Algorthims</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-5">
+                                <div class="desc">
+                                    <h3>Algorithm Design and Analysis</h3>
+                                    <p>Analyse and Design optimum Algorthims</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center animate-box">
+                            <div class="services color-5">
 								<span class="icon">
 									<i class="icon-data"></i>
 								</span>
-								<div class="desc">
-									<h3>Database Design and Analysis</h3>
-									<p>Analysis and Design of Sql and no Sql Databases</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-6">
+                                <div class="desc">
+                                    <h3>Database Design and Analysis</h3>
+                                    <p>Analysis and Design of Sql and no Sql Databases</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center animate-box">
+                            <div class="services color-6">
 								<span class="icon">
 									<i class="icon-phone3"></i>
 								</span>
-								<div class="desc">
-									<h3>Automated Software Testing</h3>
-									<p>Automated Software Testing with python</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                                <div class="desc">
+                                    <h3>Automated Software Testing</h3>
+                                    <p>Automated Software Testing with python</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
+            <section class="colorlib-skills" data-section="skills">
+                <div class="colorlib-narrow-content">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                             data-animate-effect="fadeInLeft">
+                            <span class="heading-meta">My Specialty</span>
+                            <h2 class="colorlib-heading animate-box">My Skills</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <p>I greatest strength is I have a great love for computers and problem solving. Solving
+                                problems relating to security gives me the greatest thrill of all </p>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="progress-wrap">
+                                <h3>Penetration Testing</h3>
+                                <div class="progress">
+                                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                            <div class="progress-wrap">
+                                <h3>Web Development</h3>
+                                <div class="progress">
+                                    <div class="progress-bar color-2" role="progressbar" aria-valuenow="81"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:81%">
+                                        <span>81%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="progress-wrap">
+                                <h3>Python</h3>
+                                <div class="progress">
+                                    <div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                            <div class="progress-wrap">
+                                <h3>Database Management Systems</h3>
+                                <div class="progress">
+                                    <div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="progress-wrap">
+                                <h3>Automation</h3>
+                                <div class="progress">
+                                    <div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                            <div class="progress-wrap">
+                                <h3>Cryptography</h3>
+                                <div class="progress">
+                                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="83"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:83%">
+                                        <span>83%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Specialty</span>
-							<h2 class="colorlib-heading animate-box">My Skills</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p>I greatest strength is I have a great love for computers and problem solving. Solving problems relating to security gives me the greatest thrill of all </p>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Penetration Testing</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-								    <span>95%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Web Development</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="81"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:81%">
-								    <span>81%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Python</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <span>85%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Database Management Systems</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								    <span>80%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Automation</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								    <span>70%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Cryptography</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="83"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:83%">
-								    <span>83%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Education</span>
-							<h2 class="colorlib-heading animate-box">Education</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
+            <section class="colorlib-education" data-section="education">
+                <div class="colorlib-narrow-content">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                             data-animate-effect="fadeInLeft">
+                            <span class="heading-meta">Education</span>
+                            <h2 class="colorlib-heading animate-box">Education</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="fancy-collapse-panel">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title"></h4>
 
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree Science in  Computer Science
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-									            <p> UNIVERSITY <strong>  DMI-ST.EUGENE  </strong>  2017-2020</p>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingTwo">
+                                                    <h4 class="panel-title">
+                                                        <a class="collapsed" data-toggle="collapse"
+                                                           data-parent="#accordion" href="#collapseTwo"
+                                                           aria-expanded="false" aria-controls="collapseTwo">Bachelor
+                                                            Degree Science in Computer Science
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                                     aria-labelledby="headingTwo">
+                                                    <div class="panel-body">
+                                                        <p> UNIVERSITY <strong> DMI-ST.EUGENE </strong> 2017-2020</p>
 
-									        </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingThree">
-									        <h4 class="panel-title">
-
-
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingFive">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-									        <div class="panel-body">
-									            <p>SECONDARY EDUCATION: <strong>MATERO-BOYS SECONDARY</strong>, 2008-2012 </p>
-									        </div>
-									    </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
-
-					               <div class="timeline-label">
-					                  <h2><a href="#">Systems Engineer </a> <span>JUNE 2019- OCTOBER 2019</span></h2>
-					                  <p>Worked at Microtech Cloud Solutions for 6 months</p>
-					               </div>
-					            </div>
-					         </article>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingThree">
+                                                    <h4 class="panel-title">
 
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Personal Projects</a> <span>2018-2020</span></h2>
-					                  <p>Worked on a School project based on an offline checksum verifier</p>
-					               </div>
-					            </div>
-					         </article>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="headingFive">
+                                                                <h4 class="panel-title">
+                                                                    <a class="collapsed" data-toggle="collapse"
+                                                                       data-parent="#accordion" href="#collapseFive"
+                                                                       aria-expanded="false"
+                                                                       aria-controls="collapseFive">High School
+                                                                        Secondary Education
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseFive" class="panel-collapse collapse"
+                                                                 role="tabpanel" aria-labelledby="headingFive">
+                                                                <div class="panel-body">
+                                                                    <p>SECONDARY EDUCATION: <strong>MATERO-BOYS
+                                                                        SECONDARY</strong>, 2008-2012 </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            </section>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">System Analyst</a> <span>JUNE 2019- OCTOBER 2019</span></h2>
-					                  <p>Worked at Microtech cloud Solutions</p>
-					               </div>
-					            </div>
-					         </article>
+            <section class="colorlib-experience" data-section="experience">
+                <div class="colorlib-narrow-content">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                             data-animate-effect="fadeInLeft">
+                            <span class="heading-meta">Experience</span>
+                            <h2 class="colorlib-heading animate-box">Work Experience</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="timeline-centered">
+                                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="timeline-entry-inner">
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">  Computer Scientist</a> <span>2017-Present</span></h2>
-					                  <p>Worked on freelance projects uploaded to github</p>
-					               </div>
-					            </div>
-					         </article>
+                                        <div class="timeline-icon color-1">
+                                            <i class="icon-pen2"></i>
+                                        </div>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#"> CyberSecurity/Pentester </a> <span>2017-Present</span></h2>
-					                  <p>Freelance </p>
-					               </div>
-					            </div>
-					         </article>
+                                        <div class="timeline-label">
+                                            <h2><a href="#">Systems Engineer </a> <span>JUNE 2019- OCTOBER 2019</span>
+                                            </h2>
+                                            <p>Worked at Microtech Cloud Solutions for 6 months</p>
+                                        </div>
+                                    </div>
+                                </article>
 
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
+
+                                <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon color-2">
+                                            <i class="icon-pen2"></i>
+                                        </div>
+                                        <div class="timeline-label">
+                                            <h2><a href="https://github.com/Munalula-Sikazwe/tk_checksum_verifier.git">Checksum Verifier</a> <span>2018-2019</span></h2>
+                                            <p>Worked on a School project based on an offline checksum verifier</p>
+
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon color-3">
+                                            <i class="icon-pen2"></i>
+                                        </div>
+                                        <div class="timeline-label">
+                                            <h2><a href="https://github.com/Munalula-Sikazwe/Cyber_Security_MIni_toolkit.git">CyberSecurity</a> <span>2019-2020</span></h2>
+                                            <p>A CyberSecurity Toolkit that demonstrates ways of adhering to the CIA triad of CyberSecurity</p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon color-4">
+                                            <i class="icon-pen2"></i>
+                                        </div>
+                                        <div class="timeline-label">
+                                            <h2><a href="https://jewellerystorezambia.herokuapp.com/"> Jewellery Ecommerce Website</a> <span>2021</span></h2>
+                                            <p>An Online Jewellery store hosted on heroku</p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon color-5">
+                                            <i class="icon-pen2"></i>
+                                        </div>
+                                        <div class="timeline-label">
+                                            <h2><a href="https://one-world-foundation.herokuapp.com/"> Charity organisation Website </a> <span>2021</span></h2>
+                                            <p>Charity organisation website that allows for donations to be made through the sparco payment gateway </p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon color-none">
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-			</section>
+            </section>
 
 
-	<!-- jQuery -->
-	<script src="{% static 'js/jquery.min.js' %}"></script>
-	<!-- jQuery Easing -->
-	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
-	<!-- Bootstrap -->
-	<script src="{% static 'js/bootstrap.min.js' %}"></script>
-	<!-- Waypoints -->
-	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-	<!-- Flexslider -->
-	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
-	<!-- Owl carousel -->
-	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
-	<!-- Counters -->
-	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+            <!-- jQuery -->
+            <script src="{% static 'js/jquery.min.js' %}"></script>
+            <!-- jQuery Easing -->
+            <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+            <!-- Bootstrap -->
+            <script src="{% static 'js/bootstrap.min.js' %}"></script>
+            <!-- Waypoints -->
+            <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+            <!-- Flexslider -->
+            <script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+            <!-- Owl carousel -->
+            <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+            <!-- Counters -->
+            <script src="{% static 'js/jquery.countTo.js' %}"></script>
 
 
-	<!-- MAIN JS -->
-	<script src="{% static 'js/main.js' %}"></script>
+            <!-- MAIN JS -->
+            <script src="{% static 'js/main.js' %}"></script>
 
-	</body>
+</body>
 </html>
 
