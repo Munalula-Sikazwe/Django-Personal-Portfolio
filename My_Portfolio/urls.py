@@ -14,9 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.urls import path
+from django.urls import path,include
 from portfolio import views
+from django.contrib.sitemaps.views import sitemap
+from .sitemaps import StaticPageSites
+sitemaps = {
+      'staticpagesite':StaticPageSites
+}
 
 urlpatterns = [
       path('',views.home,name='home'),
+      path('sitemap.xml',sitemap,{'sitemaps':sitemaps}),
+      path('robots.txt',include('robots.urls'))
 ]
