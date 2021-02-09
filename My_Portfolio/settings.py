@@ -39,9 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'robots',
+    'google_analytics',
 
 ]
-SITE_ID = 1
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'google_analytics.middleware.GoogleAnalyticsMiddleware',
 ]
 
 ROOT_URLCONF = 'My_Portfolio.urls'
@@ -120,3 +122,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+###########
+# site id for sitemap
+SITE_ID = 1
+########
+# Google analytics configurations
+GOOGLE_ANALYTICS = {
+    'google_analytics_id': 'G-GG3G6HNWTG',
+}
+CELERY_IMPORTS = ('google_analytics.tasks')
+GOOGLE_ANALYTICS_IGNORE_PATH = ['/admin/', ]
