@@ -129,5 +129,5 @@ SITE_ID = 1
 ########
 # Google analytics configurations
 GOOGLE_ANALYTICS = {
-    'google_analytics_id': 'G-GG3G6HNWTG',
+    'google_analytics_id': 'G-5N88BGZHNX',
 }
