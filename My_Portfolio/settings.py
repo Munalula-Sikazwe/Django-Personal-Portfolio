@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'robots',
-    'google_analytics',
+
 
 ]
 
@@ -127,6 +127,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SITE_ID = 1
 ########
 # Google analytics configurations
-GOOGLE_ANALYTICS = {
-    'google_analytics_id': 'G-GG3G6HNWTG',
-}
