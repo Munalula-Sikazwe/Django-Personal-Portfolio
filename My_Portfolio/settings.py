@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'u=xz8nve_r2_d6yiuz&jf0)7(q@ax+cl)5e(s%%%cb5g#3&y2#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['munalulasikazwe.herokuapp.com', 'localhost']
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'robots',
+    'google_analytics'
 
 
 ]
@@ -127,3 +128,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SITE_ID = 1
 ########
 # Google analytics configurations
+GOOGLE_ANALYTICS = {
+    'google_analytics_id': 'G-GG3G6HNWTG',
+}
