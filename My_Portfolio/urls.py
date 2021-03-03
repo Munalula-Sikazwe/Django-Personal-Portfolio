@@ -13,18 +13,19 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
+from django.contrib import admin
 from django.urls import path,include
 from portfolio import views
 from django.contrib.sitemaps.views import sitemap
-# from .sitemaps import StaticPageSites
-# sitemaps = {
-#       'staticpagesite':StaticPageSites
-# }
+from .sitemaps import StaticPageSites
+sitemaps = {
+      'staticpagesite':StaticPageSites
+}
 
 urlpatterns = [
+      path('admin/',admin.site.urls),
       path('',views.home,name='home'),
-      # path('sitemap.xml/',sitemap,{'sitemaps':sitemaps}),
-      # path('robots.txt/',include('robots.urls')),
+      path('sitemap.xml/',sitemap,{'sitemaps':sitemaps}),
+      path('robots.txt/',include('robots.urls')),
       path('analytics/',include('google_analytics.urls'))
 ]
