@@ -5,23 +5,7 @@
 
 <head>
 
-    {% load google_analytics_tags %}
-    <div style="display:none">
-        <img src="{% google_analytics %}" width="0" height="0"/>
-    </div>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N88BGZHNX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-5N88BGZHNX');
-    </script>
     <meta name="google-site-verification" content="HA7eShk2yQ436ASSykZp_4yEEZ7ieMjGKS2WQ6eaxdM"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,6 +58,7 @@
 </head>
 <body>
 <div id="colorlib-page">
+
     <div class="container-wrap">
         <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
            aria-expanded="false" aria-controls="navbar"><i></i></a>
@@ -102,7 +87,7 @@
 
         <div id="colorlib-main">
 
-
+ {% include 'Partials/_Introduction_section.html' %}
             <section class="colorlib-about" data-section="about">
                 <div class="colorlib-narrow-content">
                     <div class="row">
