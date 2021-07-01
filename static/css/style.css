@@ -1427,3 +1427,9 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+  #colorlib-hero #contrast_heading {
+  color:white;
+}
+  #colorlib-hero #contrast_details {
+  color:white;
+}
