@@ -1427,6 +1427,6 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
- #colorlib-hero .flexslider .slider-text > .slider-text-inner > .desc > .contrasted {
+ #colorlib-hero .flexslider .slider-text > .slider-text-inner > .desc .contrasted {
   color:white;
 }
