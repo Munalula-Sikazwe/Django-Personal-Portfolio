@@ -1430,6 +1430,7 @@ body.offcanvas {
  #colorlib-hero .flexslider .slider-text > .slider-text-inner > .desc .contrasted {
   color:white;
 }
- #colorlib-hero .flexslider .slider-text > .slider-text-inner > .desc a.contrasted:hover  {
+#colorlib-hero .flexslider .slider-text > .slider-text-inner > .desc a.contrasted,
+#colorlib-hero .flexslider .slider-text > .slider-text-inner > .desc a.contrasted:hover {
   border-color:white !important;
 }
