@@ -36,6 +36,8 @@ class Contact(models.Model):
 
 
 class Education(models.Model):
+    class Meta:
+        verbose_name_plural = "Education"
     qualification = models.CharField(max_length=100)
     level = models.CharField(max_length=100)
     institution = models.CharField(max_length=100)
