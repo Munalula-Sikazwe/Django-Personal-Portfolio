@@ -25,3 +25,5 @@ class Contact(models.Model):
     email = models.EmailField(max_length=200)
     subject = models.CharField(max_length=100)
     message = models.TextField(max_length=500)
+class Education(models.Model):
+    level = models.CharField(max_length=100)
