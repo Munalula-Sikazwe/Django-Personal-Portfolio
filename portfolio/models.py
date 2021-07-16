@@ -20,3 +20,8 @@ class Blog(models.Model):
     published_date = models.CharField(max_length=100)
     link = models.URLField(max_length=100)
     description = models.TextField(max_length=100)
+class Contact(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=200)
+    subject = models.CharField(max_length=100)
+    message = models.TextField(max_length=500)
