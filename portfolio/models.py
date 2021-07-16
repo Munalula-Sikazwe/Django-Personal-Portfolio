@@ -8,6 +8,7 @@ class AboutMe(models.Model):
     job_title = models.CharField(max_length=100)
     interest1 = models.TextField(max_length=500)
     interest2 = models.TextField(max_length=500)
+    email = models.EmailField(max_length=200)
     def __str__(self):
         return self.name
 class Service(models.Model):
