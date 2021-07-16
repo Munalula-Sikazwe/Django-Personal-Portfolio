@@ -11,7 +11,7 @@ class AboutMe(models.Model):
     interest1 = models.TextField(max_length=500)
     interest2 = models.TextField(max_length=500)
     email = models.EmailField(max_length=200, null=True)
-    address = models.CharField(max_length=200,default="UnAvailable")
+    address = models.CharField(max_length=200, default="UnAvailable")
 
     def __str__(self):
         return self.name
@@ -39,12 +39,19 @@ class Contact(models.Model):
 class Education(models.Model):
     class Meta:
         verbose_name_plural = "Education"
+
     qualification = models.CharField(max_length=100)
     level = models.CharField(max_length=100)
     institution = models.CharField(max_length=100)
     duration = models.CharField(max_length=100)
+
+
 class Experience(models.Model):
     position = models.CharField(max_length=100)
     duration = models.CharField(max_length=100)
     description = models.TextField(max_length=100)
 
+
+class Expertise(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.CharField(max_length=100)
