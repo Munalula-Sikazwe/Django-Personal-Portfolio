@@ -29,4 +29,4 @@ class Education(models.Model):
     qualification = models.CharField(max_length=100)
     level = models.CharField(max_length=100)
     institution = models.CharField(max_length=100)
-    
+    duration = models.CharField(max_length=100)
