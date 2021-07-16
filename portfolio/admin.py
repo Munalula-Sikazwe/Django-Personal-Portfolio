@@ -4,3 +4,4 @@ from . import models
 admin.site.register(models.AboutMe)
 admin.site.register(models.Service)
 admin.site.register(models.Blog)
+admin.site.register(models.Contact)
