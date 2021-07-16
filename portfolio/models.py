@@ -46,4 +46,5 @@ class Education(models.Model):
 class Experience(models.Model):
     position = models.CharField(max_length=100)
     duration = models.CharField(max_length=100)
-
+    description = models.TextField(max_length=100)
+    
