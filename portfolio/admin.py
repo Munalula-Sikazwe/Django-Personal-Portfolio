@@ -1,4 +1,5 @@
 from django.contrib import admin
-from .models import AboutMe as AboutMeModel
+import models
 # Register your models here.
-admin.site.register(AboutMeModel)
+admin.site.register(models.AboutMe)
+admin.site.register(models.Service)
