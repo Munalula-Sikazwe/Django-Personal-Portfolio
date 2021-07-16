@@ -56,3 +56,7 @@ class Expertise(models.Model):
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
 
+class Work(models.Model):
+    title = models.CharField(max_length=100)
+    type = models.CharField(max_length=100)
+    link = models.URLField(max_length=100)
