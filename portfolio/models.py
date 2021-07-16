@@ -43,4 +43,7 @@ class Education(models.Model):
     level = models.CharField(max_length=100)
     institution = models.CharField(max_length=100)
     duration = models.CharField(max_length=100)
+class Experience(models.Model):
+    position = models.CharField(max_length=100)
+    duration = models.CharField(max_length=100)
 
