@@ -26,4 +26,7 @@ class Contact(models.Model):
     subject = models.CharField(max_length=100)
     message = models.TextField(max_length=500)
 class Education(models.Model):
+    qualification = models.CharField(max_length=100)
     level = models.CharField(max_length=100)
+    institution = models.CharField(max_length=100)
+    
