@@ -16,4 +16,5 @@ class Service(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=100)
-    
+    published_date = models.CharField(max_length=100)
+    link = models.URLField(max_length=100)
