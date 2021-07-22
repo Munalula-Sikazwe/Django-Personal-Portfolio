@@ -17,6 +17,6 @@ def get_introduction_data():
 
 @register.inclusion_tag("Partials/_expertise_section.html")
 def get_introduction_data():
-    expertise = models.Expertise.objects.first()
+    expertise = models.Expertise.objects.all()
     return {"expertise": expertise}
 

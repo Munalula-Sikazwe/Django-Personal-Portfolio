@@ -9,19 +9,19 @@
                         </div>
                     </div>
                     <div class="row row-pt-md">
-
+{% for skill in expertise %}
                         <div class="col-md-4 text-center animate-box">
                             <div class="services color-2">
 								<span class="icon">
 									<i class="icon-data"></i>
 								</span>
                                 <div class="desc">
-                                    <h3>Web Development</h3>
-                                    <p> Django Framework</p>
+                                    <h3>{{ skill.title }}</h3>
+                                    <p> {{ skill.description }}</p>
                                 </div>
                             </div>
                         </div>
-                        
+                        {% endfor %}
                     </div>
                 </div>
             </section>
