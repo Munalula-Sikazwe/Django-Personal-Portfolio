@@ -8,10 +8,9 @@ register = Library()
 @register.inclusion_tag("Partials/_aboutme_section.html")
 def get_about_data():
     aboutme = AboutMe.objects.first()
-    return {"aboutme": aboutme} \
- \
- \
-@register.inclusion_tag("Partials/_Introduction_section.html")
-def get_about_data():
+    return {"aboutme": aboutme}
+
+@register.inclusion_tag("Partials/_introduction_section.html")
+def get_introduction_data():
     aboutme = AboutMe.objects.first()
     return {"aboutme": aboutme}
