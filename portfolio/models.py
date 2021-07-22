@@ -20,7 +20,8 @@ class AboutMe(models.Model):
 class Service(models.Model):
     title = models.CharField(max_length=100)
     tools = models.CharField(max_length=200)
-
+    def __str__(self):
+        return self.title
 
 class Blog(models.Model):
     title = models.CharField(max_length=100)
