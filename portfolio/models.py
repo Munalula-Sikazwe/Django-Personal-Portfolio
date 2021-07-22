@@ -49,6 +49,8 @@ class Education(models.Model):
     level = models.CharField(max_length=100)
     institution = models.CharField(max_length=100)
     duration = models.CharField(max_length=100)
+    def __str__(self):
+        return  self.qualification
 
 
 class Experience(models.Model):
