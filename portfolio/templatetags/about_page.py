@@ -15,3 +15,8 @@ def get_introduction_data():
     aboutme = models.AboutMe.objects.first()
     return {"aboutme": aboutme}
 
+@register.inclusion_tag("Partials/_expertise_section.html")
+def get_introduction_data():
+    expertise = models.Expertise.objects.first()
+    return {"expertise": expertise}
+
