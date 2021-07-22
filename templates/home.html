@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="eng">
 {% load static %}
+{% load about_page %}
 
 
 <head>
@@ -90,7 +91,7 @@
         <div id="colorlib-main">
 
  {% include 'Partials/_Introduction_section.html' %}
-            {% include 'Partials/_aboutme_section.html' %}
+            {% get_about_data %}
 
 
            {% include 'Partials/_expertise_section.html' %}
