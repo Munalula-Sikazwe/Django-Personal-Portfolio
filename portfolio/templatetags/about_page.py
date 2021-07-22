@@ -5,5 +5,5 @@ register = Library()
 
 @register.inclusion_tag("Partials/_aboutme_section.html")
 def get_about_data():
-    aboutme = AboutMe.objects.all()
+    aboutme = AboutMe.objects.first()
     return {"aboutme":aboutme}
