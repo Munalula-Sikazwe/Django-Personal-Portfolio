@@ -47,8 +47,8 @@ def get_blog_data():
     blogs = models.Blog.objects.all()
     return {"blogs": blogs}
 
+
 @register.inclusion_tag("Partials/_contact_section.html")
 def get_contact_data():
     contacts = models.AboutMe.objects.first()
     return {"contacts": contacts}
-
