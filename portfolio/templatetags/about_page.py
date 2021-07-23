@@ -21,7 +21,7 @@ def get_expertise_data():
     return {"expertise": expertise}
 
 
-@register.inclusion_tag("Partials/_skills_section.html")
+@register.inclusion_tag("Partials/_education_section.html")
 def get_education_data():
     education = models.Education.objects.all()
     return {"education": education}
