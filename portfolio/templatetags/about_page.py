@@ -28,7 +28,7 @@ def get_education_data():
 
 
 @register.inclusion_tag("Partials/_experience_section.html")
-def get_education_data():
+def get_experience_data():
     experience = models.Experience.objects.all()
     return {"experience": experience}
 
