@@ -79,8 +79,8 @@
                         <li><a href="#" data-nav-section="education">Education</a></li>
                         <li><a href="#" data-nav-section="experience">Experience</a></li>
                         <li><a href="#" data-nav-section="work">Work</a></li>
-						<li><a href="#" data-nav-section="blog">Blog</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
+                        <li><a href="#" data-nav-section="blog">Blog</a></li>
+                        <li><a href="#" data-nav-section="contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -90,18 +90,18 @@
 
         <div id="colorlib-main">
 
- {% get_introduction_data %}
+            {% get_introduction_data %}
             {% get_about_data %}
 
 
-           {% get_expertise_data %}
+            {% get_expertise_data %}
 
-{% include 'Partials/_skills_section.html' %}
+            {% include 'Partials/_skills_section.html' %}
 
-          {% get_education_data %}
+            {% get_education_data %}
 
-{% get_experience_data %}
-{% get_work_data %}
+            {% get_experience_data %}
+            {% get_work_data %}
             {% get_blog_data %}
             {% get_contact_data %}
 
@@ -124,7 +124,8 @@
             <!-- MAIN JS -->
             <script src="{% static 'js/main.js' %}"></script>
         </div>
-    </div></div>
+    </div>
+</div>
 </body>
 </html>
 
