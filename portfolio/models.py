@@ -27,7 +27,7 @@ class Blog(models.Model):
     title = models.CharField(max_length=100)
     published_date = models.CharField(max_length=100)
     link = models.URLField(max_length=100)
-    img_link = models.URLField(max_length=100)
+    img_link = models.URLField(max_length=100,default="unAvailable")
     description = models.TextField(max_length=100)
     def __str__(self):
         return self.title
