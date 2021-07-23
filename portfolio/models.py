@@ -12,7 +12,7 @@ class AboutMe(models.Model):
     interest2 = models.TextField(max_length=500)
     email = models.EmailField(max_length=200, null=True)
     address = models.CharField(max_length=200, default="UnAvailable")
-
+    phone_no = models.CharField(max_length=15,default="UnAvailable")
     def __str__(self):
         return self.name
 
