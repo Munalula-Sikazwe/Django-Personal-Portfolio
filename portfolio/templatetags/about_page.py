@@ -32,3 +32,8 @@ def get_experience_data():
     experience = models.Experience.objects.all()
     return {"experience": experience}
 
+@register.inclusion_tag("Partials/_work_section.html")
+def get_work_data():
+    work = models.Work.objects.all()
+    return {"work":work}
+
