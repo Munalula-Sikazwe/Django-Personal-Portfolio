@@ -1,7 +1,7 @@
+from django.views.generic import View
 from django.shortcuts import render
-
 # Create your views here.
 
-def home(request):
-
-    return render(request,'home.html')
+class MainView(View):
+    def get(self):
+        return render(self.request,'home.html')
