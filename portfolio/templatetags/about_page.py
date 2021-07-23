@@ -22,7 +22,7 @@ def get_expertise_data():
 
 
 @register.inclusion_tag("Partials/_skills_section.html")
-def get_expertise_data():
+def get_education_data():
     education = models.Education.objects.all()
     return {"education": education}
 
