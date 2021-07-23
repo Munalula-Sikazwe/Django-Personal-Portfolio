@@ -15,8 +15,8 @@
 								<a href="blog.html" class="blog-img"><img src="{% static "images/blog-1.jpg" %}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
 								<div class="desc">
 									<span><small>{{ blog.published_date }} </small> | <small> {{ blog.title }} </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="{{ blog.link }}">Renovating National Gallery</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<h3><a href="{{ blog.link }}">{{ blog.title }}</a></h3>
+									<p>{{ blog.description }}</p>
 								</div>
 							</div>
 						</div>
