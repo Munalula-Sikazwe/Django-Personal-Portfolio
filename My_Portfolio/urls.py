@@ -24,7 +24,7 @@ sitemaps = {
 
 urlpatterns = [
       path('admin/',admin.site.urls),
-      path('',include('portfolio.urls')),
+      path('',include('portfolio.urls',namespace='portfolio')),
       path('sitemap.xml/',sitemap,{'sitemaps':sitemaps}),
       path('robots.txt/',include('robots.urls')),
       path('analytics/',include('google_analytics.urls'))
