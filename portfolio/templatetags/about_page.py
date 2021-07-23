@@ -1,4 +1,5 @@
 from django.template import Library
+
 from portfolio import models
 
 register = Library()
@@ -8,12 +9,14 @@ register = Library()
 def get_about_data():
     aboutme = models.AboutMe.objects.first()
     services = models.Service.objects.all()
-    return {"aboutme": aboutme,"services":services}
+    return {"aboutme": aboutme, "services": services}
+
 
 @register.inclusion_tag("Partials/_introduction_section.html")
 def get_introduction_data():
     aboutme = models.AboutMe.objects.first()
     return {"aboutme": aboutme}
+
 
 @register.inclusion_tag("Partials/_expertise_section.html")
 def get_expertise_data():
@@ -32,8 +35,14 @@ def get_experience_data():
     experience = models.Experience.objects.all()
     return {"experience": experience}
 
+
 @register.inclusion_tag("Partials/_work_section.html")
 def get_work_data():
     works = models.Work.objects.all()
-    return {"works":works}
+    return {"works": works}
 
+
+@register.inclusion_tag("Partials/_work_section.html")
+def get_work_data():
+    works = models.Work.objects.all()
+    return {"works": works}
