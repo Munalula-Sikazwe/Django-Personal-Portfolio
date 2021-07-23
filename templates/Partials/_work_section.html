@@ -15,7 +15,7 @@
         <div class="row">
             {% for work in works %}
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="project" style="background-image: url({% static 'images/img-1.jpg' %});">
+                    <div class="project" style="background-image: url({{ work.link }});">
                         <div class="desc">
                             <div class="con">
                                 <h3><a href="{{ work.link }}">{{ work.title }}</a></h3>
