@@ -27,7 +27,7 @@
                                     <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                                         <div class="slider-text-inner">
                                             <div class="desc" >
-                                                <h1 class="contrasted">I am <br>a {{ aboutme.job_title }}</h1>
+                                                <h1 >I am <br/>a <br/>{{ aboutme.job_title|linebreaks }}</h1>
                                                 <p ><a  class="btn btn-primary btn-learn contrasted"
                                                       href="{% static 'certifications and transcripts.pdf' %}">View
                                                     Transcripts and Certifications <i class="icon-briefcase3"></i></a>
