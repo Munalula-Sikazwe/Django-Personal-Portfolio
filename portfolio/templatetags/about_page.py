@@ -20,3 +20,9 @@ def get_expertise_data():
     expertise = models.Expertise.objects.all()
     return {"expertise": expertise}
 
+
+@register.inclusion_tag("Partials/_skills_section.html")
+def get_expertise_data():
+    education = models.Education.objects.all()
+    return {"education": education}
+
