@@ -46,3 +46,9 @@ def get_work_data():
 def get_blog_data():
     blogs = models.Blog.objects.all()
     return {"blogs": blogs}
+
+@register.inclusion_tag("Partials/_contact_section.html")
+def get_contact_data():
+    contacts = models.Contact.objects.first()
+    return {"contacts": contacts}
+
