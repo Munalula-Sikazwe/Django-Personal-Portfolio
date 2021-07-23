@@ -42,7 +42,7 @@ def get_work_data():
     return {"works": works}
 
 
-@register.inclusion_tag("Partials/_work_section.html")
-def get_work_data():
-    works = models.Work.objects.all()
-    return {"works": works}
+@register.inclusion_tag("Partials/_blog_section.html")
+def get_blog_data():
+    blogs = models.Blog.objects.all()
+    return {"blogs": blogs}
