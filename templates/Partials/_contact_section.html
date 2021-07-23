@@ -7,14 +7,13 @@
 						</div>
 					</div>
 					<div class="row">
-                        {% for contact in contacts %}
 						<div class="col-md-5">
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
 								<div class="colorlib-icon">
 									<i class="icon-globe-outline"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="#">{{ data.email }}</a></p>
+									<p><a href="#">{{ contact.email }}</a></p>
 								</div>
 							</div>
 
@@ -23,7 +22,7 @@
 									<i class="icon-map"></i>
 								</div>
 								<div class="colorlib-text">
-									<p>{{ data.address }}</p>
+									<p>{{ contact.address }}</p>
 								</div>
 							</div>
 
@@ -36,7 +35,7 @@
 								</div>
 							</div>
 						</div>
-                        {% endfor %}
+
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
