@@ -12,7 +12,7 @@
                                                 <h1>Hi! I'm <br>{{ aboutme.name }} </h1>
 
                                                 <p><a class="btn btn-primary btn-learn"
-                                                      href="{% static 'Munalula_Sikazwe_Resume.pdf' %}">Download CV <i
+                                                      href="{{ aboutme.resume.url }}">Download Resume <i
                                                         class="icon-download4"></i></a></p>
                                             </div>
                                         </div>
@@ -29,7 +29,7 @@
                                             <div class="desc" >
                                                 <h1 >I am <br/>a<br/>{{ aboutme.job_title }}</h1>
                                                 <p ><a  class="btn btn-primary btn-learn contrasted"
-                                                      href="{% static 'certifications and transcripts.pdf' %}">View
+                                                      href="{{ aboutme.certification.url }}">Download
                                                     Certifications <i class="icon-briefcase3"></i></a>
                                                 </p>
                                             </div>
