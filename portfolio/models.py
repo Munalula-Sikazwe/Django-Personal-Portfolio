@@ -1,7 +1,8 @@
 from django.db import models
 def get_folder_name(instance):
     return instance.title
-
+def get_profile_name(instance):
+    return instance.name +  '_photo'
 # Create your models here.
 class AboutMe(models.Model):
     class Meta:
@@ -14,7 +15,7 @@ class AboutMe(models.Model):
     email = models.EmailField(max_length=200, null=True)
     address = models.CharField(max_length=200, default="UnAvailable")
     phone_no = models.CharField(max_length=15,default="UnAvailable")
-    photo = models.ImageField(upload_to='profile_photo',null=True)
+    photo = models.ImageField(upload_to=get_profile_name,null=True)
     def __str__(self):
         return self.name
 
@@ -74,6 +75,6 @@ class Work(models.Model):
     title = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
     link = models.URLField(max_length=100)
-    img = models.ImageField(upload_to=get_folder_name)
+    img = models.ImageField(upload_to=get_folder_name,null=true)
     def __str__(self):
         return self.title
