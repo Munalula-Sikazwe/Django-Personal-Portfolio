@@ -75,6 +75,6 @@ class Work(models.Model):
     title = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
     link = models.URLField(max_length=100)
-    img = models.ImageField(upload_to=get_folder_name,null=true)
+    img = models.ImageField(upload_to=get_folder_name,null=True)
     def __str__(self):
         return self.title
