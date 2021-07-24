@@ -13,6 +13,7 @@ class AboutMe(models.Model):
     email = models.EmailField(max_length=200, null=True)
     address = models.CharField(max_length=200, default="UnAvailable")
     phone_no = models.CharField(max_length=15,default="UnAvailable")
+    photo = models.ImageField(upload_to='profile_photo')
     def __str__(self):
         return self.name
 
