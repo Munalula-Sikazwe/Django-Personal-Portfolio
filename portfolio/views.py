@@ -20,4 +20,4 @@ class MainView(View):
         contact = Contact.objects.create(name=name, email=email, subject=subject, message=message)
         contact.save()
         success(request,"Thank you for reaching out I will respond as soon as I can")
-        return  redirect(reverse('portfolio:home'))
+        return  redirect(reverse('portfolio:home') + '#contact')
