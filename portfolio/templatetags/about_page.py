@@ -1,5 +1,4 @@
 from django.template import Library
-
 from portfolio import models
 
 register = Library()
@@ -14,6 +13,7 @@ def get_about_data():
 
 @register.inclusion_tag("Partials/_introduction_section.html")
 def get_introduction_data():
+
     aboutme = models.AboutMe.objects.first()
     return {"aboutme": aboutme}
 
