@@ -1,5 +1,6 @@
 from django.db import models
-
+def get_folder_name(instance):
+    return instance.title
 
 # Create your models here.
 class AboutMe(models.Model):
@@ -73,6 +74,6 @@ class Work(models.Model):
     title = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
     link = models.URLField(max_length=100)
-    img_link = models.URLField(max_length=100,default="#")
+    img = models.ImageField(upload_to=get_folder_name)
     def __str__(self):
         return self.title
