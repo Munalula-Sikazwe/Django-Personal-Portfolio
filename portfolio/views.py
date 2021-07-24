@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect,reverse
 from django.views.generic import View
-
+from django.contrib.messages import success
 from .models import Contact,AboutMe
 
 
@@ -19,4 +19,5 @@ class MainView(View):
         message = request.POST.get('message', 'Anonymous')
         contact = Contact.objects.create(name=name, email=email, subject=subject, message=message)
         contact.save()
+        success(request,"Thank you for reaching out I will respond as soon as I can")
         return  redirect(reverse('portfolio:home'))
