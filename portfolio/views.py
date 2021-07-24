@@ -19,5 +19,5 @@ class MainView(View):
         message = request.POST.get('message', 'Anonymous')
         contact = Contact.objects.create(name=name, email=email, subject=subject, message=message)
         contact.save()
-        success(request,"Thank you for reaching out I will respond as soon as I can")
+        success(request,"Message Sent")
         return  redirect(reverse('portfolio:home') + '#contact')
