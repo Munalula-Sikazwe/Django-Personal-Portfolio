@@ -1,14 +1,16 @@
 from django.shortcuts import render,redirect,reverse
 from django.views.generic import View
 
-from .models import Contact
+from .models import Contact,AboutMe
 
 
 # Create your views here.
 
 class MainView(View):
     def get(self, request):
-        return render(request, 'home.html')
+        aboutme = AboutMe.objects.first()
+        context = { 'aboutme':aboutme}
+        return render(request, 'home.html',context)
 
     def post(self, request):
         name = request.POST.get('name', 'Anonymous')

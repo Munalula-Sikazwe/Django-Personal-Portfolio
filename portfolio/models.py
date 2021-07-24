@@ -1,7 +1,7 @@
 from django.db import models
-def get_folder_name(instance):
+def get_folder_name(instance,filename):
     return instance.title
-def get_profile_name(instance):
+def get_profile_name(instance,filename):
     return instance.name +  '_photo'
 # Create your models here.
 class AboutMe(models.Model):
