@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from portfolio import views
+from django.conf.urls.static import static
+from django.conf import settings
+
 from django.contrib.sitemaps.views import sitemap
 from .sitemaps import StaticPageSites
 sitemaps = {
@@ -28,4 +30,4 @@ urlpatterns = [
       path('sitemap.xml/',sitemap,{'sitemaps':sitemaps}),
       path('robots.txt/',include('robots.urls')),
       path('analytics/',include('google_analytics.urls'))
-]
+] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
