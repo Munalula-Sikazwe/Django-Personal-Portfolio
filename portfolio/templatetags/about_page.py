@@ -39,7 +39,8 @@ def get_experience_data():
 @register.inclusion_tag("Partials/_work_section.html")
 def get_work_data():
     works = models.Work.objects.all()
-    return {"works": works}
+    count = models.Work.objects.all().count()
+    return {"works": works,"count":count}
 
 
 @register.inclusion_tag("Partials/_blog_section.html")
