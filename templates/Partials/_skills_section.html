@@ -18,7 +18,7 @@
                 <div class="progress-wrap">
                     <h3>{{ skill.name }}</h3>
                     <div class="progress">
-                        <div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
+                        <div class="progress-bar {% cycle 'color-1' 'color-2' 'color-3' 'color-4' %}" role="progressbar" aria-valuenow="95"
                              aria-valuemin="0" aria-valuemax="100" style="width:{{ skill.level }}">
                             <span>{{ skill.level }}</span>
                         </div>
