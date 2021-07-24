@@ -1429,9 +1429,6 @@ body.offcanvas {
   opacity: 0; }
 .msg{
   position: fixed;
-  margin: 0 !important;
-    margin-bottom: 4px !important;
-    margin-top: 4px !important;
 }
 .fade {
     opacity: 0;
