@@ -53,3 +53,8 @@ def get_blog_data():
 def get_contact_data():
     contact = models.AboutMe.objects.first()
     return {"contact": contact}
+
+@register.inclusion_tag("Partials/_skills_section.html")
+def get_skills_data():
+    skills = models.Skill.objects.first()
+    return {"contact": skills}
