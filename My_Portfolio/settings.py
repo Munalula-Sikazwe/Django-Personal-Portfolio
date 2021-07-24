@@ -133,3 +133,6 @@ SITE_ID = 1
 GOOGLE_ANALYTICS = {
     'google_analytics_id': 'G-5N88BGZHNX',
 }
+## Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
