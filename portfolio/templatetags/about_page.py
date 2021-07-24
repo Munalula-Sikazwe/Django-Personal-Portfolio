@@ -56,5 +56,5 @@ def get_contact_data():
 
 @register.inclusion_tag("Partials/_skills_section.html")
 def get_skill_data():
-    skills = models.Skill.objects.first()
+    skills = models.Skill.objects.all()
     return {"skills": skills}
