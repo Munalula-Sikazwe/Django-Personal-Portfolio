@@ -16,8 +16,8 @@ class AboutMe(models.Model):
     address = models.CharField(max_length=200, default="UnAvailable")
     phone_no = models.CharField(max_length=15,default="UnAvailable")
     photo = models.ImageField(upload_to=get_profile_name,null=True)
-    cv = models.FileField(upload_to='cv')
-    certification = models.FileField(upload_to='certification')
+    cv = models.FileField(upload_to='cv',null=True)
+    certification = models.FileField(upload_to='certification',null=True)
     def __str__(self):
         return self.name
 
